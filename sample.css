@@ -1,0 +1,21 @@
+
+
+
+
+ .stuff {
+  display: block;
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+}
+
+.navbar-item {
+
+  background-color: white;
+  border-color: white;
+  color: purple 
+  !important;
+  
+}
