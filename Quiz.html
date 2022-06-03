@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Quiz</title>
+      <link rel="stylesheet" href="./styles.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+      
+  </head>
+  <body>
+  
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+            
+            </a>
+        
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div class="navbar-start">
+            <a class="navbar-item" href="Results.html">
+              View Highscores
+            </a> 
+            </div>
+        
+            <div class="navbar-end">
+              <p id="timer"> Time Remaining: 60</p>
+            </div>
+          </div>
+        </nav>
+      
+        <div id="main-content"> 
+         
+          <div id="top-text">
+            <h1 class="top"> <strong> Coding Quiz Challenge </strong></h1>
+            <p>Try to answer the following code-related questions within the time limit.<p>
+            <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!!<p>
+            <button class="start-quiz-button"  type="button" onclick="init()">Start Quiz</button>
+          </div>    
+            
+              <div id="question-block" class="options hide">
+                
+                  <input type="radio" id="option-0" name="choice" value="option-0"> 
+                  <label for="option-0" id="option-0-label"></label>
+                  <input type="radio" id="option-1" name="choice" value="option-1"> 
+                  <label for="option-0" id="option-1-label"></label>
+                  <input type="radio" id="option-2" name="choice" value="option-2"> 
+                  <label for="option-0" id="option-2-label"></label>
+                  <input type="radio" id="option-3"name="choice" value="option-3"> 
+                  <label for="option-0" id="option-3-label"></label>
+              
+              <button onclick="submitAnswer()">Next Question</button>
+            </div>
+
+        </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

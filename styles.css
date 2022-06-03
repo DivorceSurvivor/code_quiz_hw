@@ -1,0 +1,43 @@
+ #main-content {
+    display: block;
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.navbar-item {
+  background-color: white;
+  border-color: white;
+  color: purple 
+  !important;
+  
+}
+.start-quiz-button {
+  background-color: purple;
+  color: white;
+}
+
+#timer {
+color: red
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighScores</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+
+
+    <a class="Go_Back" href="sample2ndpage.html">
+
+        <article>
+            
+             <h1> HighScores</h1>
+
+             <div id="scores">
+              
+             </div>
+              
+            
+            <p>Go Back</p>
+          </article>
+
+
+          <!-- <div class="row">
+            <div class="column">
+              <img src="img_snow.jpg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img_forest.jpg" alt="Forest" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+            </div>
+          </div> -->
+
+
+<script>
+  let scoresString = localStorage.getItem("scores");
+  let scores = JSON.parse(scoresString);
+  let scoreElement = document.getElementById("scores");
+  scoreElement.innerHTML = scores;
+</script>
+
+</body>
+</html>
+
